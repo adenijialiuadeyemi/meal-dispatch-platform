@@ -1,0 +1,45 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.explore-menu h1{
+    font-weight: 500;
+    color: #262626;
+}
+.explore-menu-text{
+    max-width: 60%;
+    color:#808080;
+}
+.explore-menu-list{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display:none;
+}
+.explore-menu-list img{
+    width:7.5vw;
+    min-width:80px;
+    cursor:pointer;
+    border-radius: 50%;
+}
+.explore-menu-list p{
+    margin-top:10px;
+    color:#747474;
+    font-size:max(1.4vw,16px)
+}
+.explore-menu hr{
+    border:0;
+    background:#e2e2e2;
+    height: 2px;
+    margin:10px 0
+}
+.explore-menu-list .active{
+    border:3px solid tomato;
+    padding: 2px;
+    transition: 0.3s ease;
+}
